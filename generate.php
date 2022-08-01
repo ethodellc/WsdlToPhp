@@ -1,12 +1,16 @@
 <?php
 /**
- * Sample to show how to use WsdlToPhpGenerator class
- * @package WsdlToPhpGenerator
- * @date 01/07/2012
+ * Based off the examples in samples-generator.php, this script has successfully
+ * replaced to the generated classes that we initially got from
+ * www.wsdltophp.com (which doesn't seem to work anymore).
+ *
+ * @date 01/08/2022
  */
+
 ini_set('display_errors',true);
 error_reporting(-1);
 ini_set('memory_limit',-1);
+
 /**
  * In case function lcfirst doesn't exist
  */
@@ -17,6 +21,7 @@ if(!function_exists('lcfirst'))
         return strtolower(substr($_s,0,1)) . substr($_s,1);
     }
 }
+
 /**
  * Librairies
  */

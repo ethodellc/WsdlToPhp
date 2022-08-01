@@ -1,6 +1,26 @@
-# Warning
-This project is not intended to be improved/enhanced anymore. It is kept in his original state for those who use it as it is.
-From now, please look at https://github.com/WsdlToPhp/PackageGenerator to get the refactored and improved version of this project which is evoluting.
+# Overdriv Usage
+
+Build the docker image:
+
+```bash
+docker-compose build app
+```
+
+Start the container and enter the shell:
+
+```bash
+docker-compose run app
+```
+
+Run the PHP script to generate the PHP classes:
+
+```bash
+php generate.php
+```
+
+Finally, copy the contents of **samples/OnBase/** into **app/libraries/Onbaseapi**.
+
+ORIGINAL README:
 
 # WsdlToPhpGenerator
 Generate PHP classes based on a WSDL
